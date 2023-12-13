@@ -1,0 +1,41 @@
+body{
+    font-size: 16px;
+}
+
+.pfeil_rechts{
+    transform: scale(-1, 1)
+}
+
+.menu_relative{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_absolute{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 100%;
+}
+
+.menu_relative:hover .menu_absolute{
+    display: block;
+}
+
+.taste {
+    display: flex;
+    align-items: center;
+}
+  
+.taste__durchsichtig {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.taste__durchsichtig:hover {
+    background-color: white;
+}
